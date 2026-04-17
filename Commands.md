@@ -1,5 +1,5 @@
 # Commands For Cluster
-## To create a cluster (kind):
+### To create a cluster (kind):
 kind create cluster [kind latest release paste here] --name=(clustername) --config= config.yml
 
 ## To get info about the cluster and context: 
