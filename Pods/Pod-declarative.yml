@@ -13,6 +13,5 @@ spec:
 
 # Creating the pod command: 
 
-```bash
 kubectl create -f pod-declarative.yml
-```
+
