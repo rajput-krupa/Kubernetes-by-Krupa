@@ -15,6 +15,9 @@ So, an orchestration system is needed, to get a mechanism for autohealing the Ap
 ### To check the number of pods. 
 kubectl get rc
 
+<img width="681" height="52" alt="Screenshot 2026-04-17 at 3 19 52 PM" src="https://github.com/user-attachments/assets/55bfb946-5465-4967-bc7e-be5b604189cc" />
+
+
 ## If (Worker) Node is Out of Capacity of Pods.
 - Then it spins up a new node and provision pod in the new node.
 - Replication controller can spin up multiple nodes. (manual for now) can be done by automatically.
