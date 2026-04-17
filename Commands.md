@@ -28,3 +28,15 @@ kubectl get pods nginx-pod --show-labels
 ### extended info about pod:
 kubectl get pods -o wide
 
+### Directly to change the image :
+kubectl set image deploy/deploymentname \
+nginx=nginx:19.1
+
+### To get rollout History
+kubectl rollout history deploy/deploymentname
+### To undo the rollout changes:
+kubectl rollout undo deploy/deploymentname
+
+## COMPLETE KUBERNETES COMMANDS
+https://kubernetes.io/docs/reference/kubectl/quick-reference/
+
