@@ -1,0 +1,4 @@
+```bash 
+kubectl run nginx-pod --image=niginx:latest
+```
+
