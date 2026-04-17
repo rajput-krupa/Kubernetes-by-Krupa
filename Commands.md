@@ -2,21 +2,21 @@
 ### To create a cluster (kind):
 kind create cluster [kind latest release paste here] --name=(clustername) --config= config.yml
 
-## To get info about the cluster and context: 
+### To get info about the cluster and context: 
 kubectl cluster-info --context kind-(clustername)
 
-## To see present nodes: 
+### To see present nodes: 
 kubectl get nodes
 
 # Commands for .Yaml file
-## To create/apply any file (.yaml):
+### To create/apply any file (.yaml):
 kubectl create/apply -f filename.yml
 
 # Commands for Pods
-## To run a pod: just dry run (not actualy running, just to see output)
+### To run a pod: just dry run (not actualy running, just to see output)
 kubectl run nginx --image=nginx --dry-run=client
 
-## To go inside the pod:
+### To go inside the pod:
 kubectl exec -it pod/podname --bash
 
 ## To describe the pod:
