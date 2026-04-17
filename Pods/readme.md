@@ -15,4 +15,10 @@ User interacts with the API Server which is in control plane node. With help of 
 
  
 
-  
+  ## What is a .yaml ?
+  - Yaml is a markup language, used to make a confuguration file.
+  - "#" is used for comment.
+  - Supports different datatypes.
+  - "spec" has various fields used for specifying details for a POD, deployment or else.
+  - For list starts with "-".
+  - 
