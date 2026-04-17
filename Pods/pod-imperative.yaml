@@ -1,4 +1,4 @@
-# Bash 
-```bash
+# Imperative way to create pod
+
 kubectl run nginx --image=nginx
-```
+
