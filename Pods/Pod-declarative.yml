@@ -10,3 +10,9 @@ spec:
     image: nginx
     ports:
     - containerPort: 80
+
+# Creating the pod command: 
+
+```bash
+kubectl create -f pod-declarative.yml
+```
