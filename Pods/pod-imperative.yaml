@@ -1,4 +1,1 @@
-```yaml
-kubectl run nginx-pod --image=niginx:latest
-```
-
+kubectl run nginx --image=nginx
