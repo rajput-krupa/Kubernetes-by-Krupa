@@ -23,6 +23,33 @@ kubectl get rc
 - Replication controller can spin up multiple nodes. (manual for now) can be done by automatically.
 
 
+# ReplicaSet
+
+Difference between the replicaset and replicacontroller is:
+Replication Controller : Is only be used to manage the resources created as part of that ReplicaControl.
+ReplicaSet: We can also manage the existing pods, that are not a part of this replicaSet.
+- Can be done with a field: **Selector** and match the labels.
+  ```bash
+  selector:
+    matchLabels:
+      env: demo
+  ```
+- Apply the changes!
+
+### To change the replicas For Scaling Up and Down!
+- METHOD 1:
+  Direct update the manifest file (.yaml) ---> Save the file ---> Apply changes
   
-
-
+- METHOD 2:
+  Can change the live Object, Instead from .yml file.
+  ```bash
+  kubectl edit rs/ReplicaSetname
+  ```
+  Under Spec/replica change it!
+  
+- METHOD 3:
+  From Imperative way.
+  ```bash
+  kubectl scale --replicas=10 rs/ReplicaSetname
+  ```
+  
