@@ -1,1 +1,14 @@
-
+```bash
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: nginx-pod
+  labels:
+    env: demo
+spec: 
+  containers:
+  - name: nginx-container
+    image: nginx
+    ports:
+    - containerPort: 80
+```
