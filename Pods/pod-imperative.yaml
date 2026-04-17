@@ -1,4 +1,4 @@
-``` bash
+``` yaml
 kubectl run nginx-pod --image=niginx:latest
 ```
 
