@@ -1,4 +1,4 @@
 # Imperative way to create pod
 
-kubectl run nginx --image=nginx
+kubectl run nginx --image=nginx:latest
 
