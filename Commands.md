@@ -19,12 +19,12 @@ kubectl run nginx --image=nginx --dry-run=client
 ### To go inside the pod:
 kubectl exec -it pod/podname --bash
 
-## To describe the pod:
+### To describe the pod:
 kubectl describe pod nginx-pod
 
-## To see labels on pod: 
+### To see labels on pod: 
 kubectl get pods nginx-pod --show-labels
 
-## extended info about pod:
+### extended info about pod:
 kubectl get pods -o wide
 
