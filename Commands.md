@@ -37,6 +37,11 @@ kubectl rollout history deploy/deploymentname
 ### To undo the rollout changes:
 kubectl rollout undo deploy/deploymentname
 
+# Commands for Service 
+
+### To get all the services: 
+kubectl get svc
+
 ## COMPLETE KUBERNETES COMMANDS
 https://kubernetes.io/docs/reference/kubectl/quick-reference/
 
