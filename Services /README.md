@@ -1,3 +1,4 @@
+
 # Service
 To make the application available, services are used in Kubernetes.
 So the app is accessible to the users and pods(frontend, backend, Databases) are able to communicate with each other.
@@ -32,10 +33,11 @@ So between the user and the pods, **Service** will act as a mediator. Makes sure
   - Run command: curl 172.19.0.9:30001 (On web: localhost://30001)
  
     
-- **External names**
+- **External names**: For internal apps to refer to the DNS of application, *External Names* are used
   
 - **Load Balancer**: Every pod has an IP assigned, when pod restarts, Ip changes (pod IP is not static). So, can't access the pod from IP address. Not even internally.
   - So **LoadBalancer** is used, it will place all pods in backend of the load balancer.
   - Now, whenever user access the app, they don't have to access seperate ip of pods, just hit the load balancer and it will distribute traffic accross different pods. App spins up!!
   - We provision external Load balancer, then can use service type as "*Loadbalancer*" inside k8s and refer it.
+    <img width="488" height="183" alt="Screenshot 2026-04-18 at 6 28 58 PM" src="https://github.com/user-attachments/assets/b2265b57-692c-4ca8-9e6d-ae89a1460b26" />
   
