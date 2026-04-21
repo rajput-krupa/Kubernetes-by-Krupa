@@ -1,1 +1,21 @@
-
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: nginx-ds
+  labels:
+    env: demo
+spec:
+  selector:
+    env: demo
+    name: nginx
+  template:    ## applied the same template used in original pod.
+    metadata:
+      labels:
+        env: demo
+        name: nginx
+    spec:
+      containers:
+        - name: nginx
+          image: nginx
+          ports:
+            - containerPort: 80
