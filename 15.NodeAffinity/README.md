@@ -14,3 +14,6 @@
 <img width="461" height="167" alt="Screenshot 2026-04-30 at 8 04 44 AM" src="https://github.com/user-attachments/assets/50571b86-2868-4643-88d7-9f48a1d134f9" />
 
 **preferredDuringSchedulingIgnoredDuringExecution** - Prefers its matching the label. Even if not matching, it will scheduling ignore during the execution
+<img width="240" height="85" alt="Screenshot 2026-04-30 at 8 16 23 AM" src="https://github.com/user-attachments/assets/42eef1dc-139b-49ce-b89f-12476fe5d4c6" />
+
+Node Affinity and Taints and Tollerations Both are used to make sure our pods are scheduled to correct Nodes.
