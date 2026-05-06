@@ -30,3 +30,12 @@ Now another file would be opened, that is *adam.csr*. This is the request which 
 3. Now We need to create a csr.yaml to approve that.
    <img width="495" height="196" alt="Screenshot 2026-05-05 at 9 38 45 PM" src="https://github.com/user-attachments/assets/4a34d69e-908e-4c41-be25-686007a92808" />
 Replace the " request: " from the one which you recieved through the user as .csr. ---> Need to encode and than paste the csr file in front of the " request: " .
+4. Apply the csr.yaml.
+5. Now need to approve.<img width="257" height="27" alt="Screenshot 2026-05-06 at 11 20 17 AM" src="https://github.com/user-attachments/assets/2d59cc33-de87-4834-9144-008a1210d80f" />
+DO describe on that. See the status.
+6. Now approve it with the command, ```kubectl certificate approve adam```.
+<img width="535" height="91" alt="Screenshot 2026-05-06 at 11 22 42 AM" src="https://github.com/user-attachments/assets/25d2b5e5-a324-41e1-8efb-dffba1645e1e" />
+7. To send the approved certificate, redirect it into new file
+   <img width="323" height="22" alt="Screenshot 2026-05-06 at 11 24 23 AM" src="https://github.com/user-attachments/assets/c06e036d-3273-4337-a5fb-05a5de66a781" />
+   Now when we send it request: can not be so long that shows in the file we have to decode it.
+   ```echo "paste the request" | base64 -d```
